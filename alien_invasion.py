@@ -7,6 +7,7 @@ April 9, 2026"""
 import sys
 import pygame
 from settings import Settings
+from ship import Ship
 
 class AlienInvasion:
     """Creates a class to house the game"""
@@ -25,6 +26,8 @@ class AlienInvasion:
         self.running = True
         self.clock = pygame.time.Clock()
 
+        self.ship = Ship(self)
+
     def run_game(self):
         """Begins to run the game"""
         # Game Loop
@@ -36,6 +39,7 @@ class AlienInvasion:
                     sys.exit()
 
             self.screen.blit(self.bg, (0,0))
+            self.ship.draw()
             pygame.display.flip()
             self.clock.tick(self.settings.FPS)
 
