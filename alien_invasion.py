@@ -14,7 +14,23 @@ class AlienInvasion:
         """Initializes the game"""
         pygame.init()
 
-        self.screen = pygame.display.set_mode
+        self.screen = pygame.display.set_mode((1200,800))
+        pygame.display.set_caption("Alien Invasion")
+
+        running = True
+
+    def run_game(self):
+        """Begins to run the game"""
+        # Game Loop
+        while self.running:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+            pygame.display.flip()
+
 
 if __name__ == '__main__':
-    pass
+    ai = AlienInvasion()
+    ai.rungame()
