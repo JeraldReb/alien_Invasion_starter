@@ -17,7 +17,7 @@ class AlienInvasion:
         self.screen = pygame.display.set_mode((1200,800))
         pygame.display.set_caption("Alien Invasion")
 
-        running = True
+        self.running = True
 
     def run_game(self):
         """Begins to run the game"""
@@ -33,4 +33,4 @@ class AlienInvasion:
 
 if __name__ == '__main__':
     ai = AlienInvasion()
-    ai.rungame()
+    ai.run_game()
