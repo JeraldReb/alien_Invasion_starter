@@ -22,7 +22,7 @@ class Arsenal:
     def _remove_bullets_offscreen(self):
         """Removes bullets after they exit the screen"""
         for bullet in self.arsenal.copy():
-             if bullet.rect.bottom <= 0:
+             if bullet.rect.left <= 0:
                   self.arsenal.remove(bullet)
 
          
