@@ -20,7 +20,7 @@ class Ship:
         self.image = pygame.transform.scale(self.image, (self.settings.ship_w, self.settings.ship_h))
 
         self.rect = self.image.get_rect()
-        self.rect.midbottom = self.boundaries.midbottom
+        self.rect.midright = self.boundaries.midright
         self.moving_right = False
         self.moving_left = False
         self.x = float(self.rect.x)
