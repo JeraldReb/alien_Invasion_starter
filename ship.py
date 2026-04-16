@@ -32,6 +32,7 @@ class Ship:
         self.arsenal.update_arsenal()
 
     def _update_ship_movement(self):
+        """Updates the movement of the ship based on speed and boundaries"""
         temp_speed = self.settings.ship_speed
         
         if self.moving_right and self.rect.right < self.boundaries.right:
