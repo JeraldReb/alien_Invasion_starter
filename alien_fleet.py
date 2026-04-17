@@ -105,8 +105,14 @@ class AlienFleet:
         return pygame.sprite.groupcollide(self.fleet, other_group, True, True)
     
     def check_fleet_bottom(self):
+        """Checks for collisions between alien fleet and bottom of screen"""
         alien: Alien
         for alien in self.fleet:
             if alien.rect.bottom >= self.settings.screen_h:
                 return True
         return False
+
+    def check_destroyed_status(self):
+        """Checks if aliens have been destroyed"""
+        return not self.fleet
+    
