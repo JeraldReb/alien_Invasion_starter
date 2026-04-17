@@ -75,6 +75,25 @@ class AlienFleet:
 
         self.fleet.add(new_alien)
 
+    def _check_fleet_edges(self):
+        """Checks edges of the alien fleet for collisions"""
+        alien: Alien
+        for alien in self.fleet:
+            if alien.check_edges():
+                self._drop_alien_fleet()
+                self.fleet_direction *= -1
+                break
+    
+    def _drop_alien_fleet(self):
+        """Drops the alien fleet down"""
+        for alien in self.fleet:
+            alien.y += self.fleet_drop_speed
+    
+    def update_fleet(self):
+        """Updates the alien fleet"""
+        self.fleet.update()
+        self._check_fleet_edges()
+
     def draw(self):
         """Draws the fleet to the screen"""
         alien: 'Alien'
