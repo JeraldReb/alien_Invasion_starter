@@ -1,7 +1,7 @@
-"""Participation Activity 13
+"""Participation Activity 14
 Jerald Reb
 Continuing to create Alien Invasion game
-Starter code from Unit 12 and 13 resources
+Starter code from Unit 12, 13, and 14 resources
 April 15, 2026"""
 
 import sys
