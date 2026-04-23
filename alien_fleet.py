@@ -32,6 +32,7 @@ class AlienFleet:
         self._create_rectangle_fleet(alien_w, alien_h, fleet_w, fleet_h, x_offset, y_offset)
 
     def _create_rectangle_fleet(self, alien_w, alien_h, fleet_w, fleet_h, x_offset, y_offset):
+        """Creates a rectangular alien fleet"""
         for row in range(fleet_h):      
             for col in range(fleet_w):
                 current_x = alien_w * col + x_offset
@@ -43,6 +44,7 @@ class AlienFleet:
                 self._create_alien(current_x, current_y)
 
     def calculate_offsets(self, alien_w, alien_h, screen_w, fleet_w, fleet_h):
+        """Calculates offsets for alien spacing"""
         half_screen = self.settings.screen_w // 2
         fleet_horizontal_space = fleet_w * alien_w
         fleet_vertical_space = fleet_h * alien_h
