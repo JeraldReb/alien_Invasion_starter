@@ -47,9 +47,11 @@ class Settings:
 
         self.fleet_speed = 2
         self.fleet_drop_speed = 40
+        self.alien_points = 50
 
     def increase_difficulty(self):
         """Increments the difficulty to make higher levels harder"""
         self.ship_speed *= self.difficulty_scale
         self.fleet_speed *= self.difficulty_scale
         self.bullet_speed *= self.difficulty_scale
+        self.alien_points *= self.difficulty_scale
