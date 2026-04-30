@@ -1,3 +1,9 @@
+"""Arsenal.py
+Jerald Reb
+Creates the arsenal for the game
+Starter code from units 12, 13, and 14 resources
+April 30, 2026"""
+
 import pygame
 from bullet import Bullet
 from typing import TYPE_CHECKING

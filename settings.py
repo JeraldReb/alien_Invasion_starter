@@ -1,3 +1,9 @@
+"""settings.py
+Jerald Reb
+Holds the settings for the game
+Starter code from units 12, 13, and 14 resources
+April 30, 2026"""
+
 import pathlib
 from pathlib import Path
 class Settings:

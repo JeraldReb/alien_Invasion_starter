@@ -1,3 +1,9 @@
+"""game_stats.py
+Jerald Reb
+Holds the stats for the game
+Starter code from units 12, 13, and 14 resources
+April 30, 2026"""
+
 # from pathlib import Path
 import json
 from typing import TYPE_CHECKING

@@ -1,3 +1,9 @@
+"""Alien.py
+Jerald Reb
+Creates the individual aliens for the fleet
+Starter code from units 12, 13, and 14 resources
+April 30, 2026"""
+
 import pygame
 from pygame.sprite import Sprite
 from typing import TYPE_CHECKING

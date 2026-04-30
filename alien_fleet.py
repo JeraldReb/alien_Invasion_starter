@@ -1,3 +1,9 @@
+"""Alien_fleet.py
+Jerald Reb
+Creates the alien fleet for the game
+Starter code from units 12, 13, and 14 resources
+April 30, 2026"""
+
 import pygame
 from alien import Alien
 from typing import TYPE_CHECKING

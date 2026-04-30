@@ -1,3 +1,9 @@
+"""bullet.py
+Jerald Reb
+Creates the individual bullets for the arsenal
+Starter code from units 12, 13, and 14 resources
+April 30, 2026"""
+
 import pygame
 from pygame.sprite import Sprite
 from typing import TYPE_CHECKING

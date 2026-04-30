@@ -1,3 +1,9 @@
+"""ship.py
+Jerald Reb
+Creates the ship for the game
+Starter code from units 12, 13, and 14 resources
+April 30, 2026"""
+
 import pygame
 from settings import Settings
 from typing import TYPE_CHECKING
